@@ -21,13 +21,13 @@ Contributing
 Since this Web app is hosted on github.io, the 'master' branch must be used to deploy the production-ready app.  
 Because of this, all development takes place on the 'develop' branch.
 
-To start the app::
+To start the app
     $ gulp serve
 
-To build and preview the production-ready app::
+To build and preview the production-ready app
     $ gulp serve:dist
 
-To deploy the app::
+To deploy the app
     $ gulp deploy 
 
 Adding new content
