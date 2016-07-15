@@ -12,7 +12,7 @@ Prerequisites
 #. npm (which comes bundled with node)
 #. gulp-deploy-git
 
-To install gulp-deploy-git::
+To install gulp-deploy-git
     $ npm install --save-dev gulp-deploy-git
 
 Contributing
