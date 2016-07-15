@@ -12,7 +12,9 @@ const reload = browserSync.reload;
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages())
+    .pipe(ghPages({
+              branch: 'master'
+          }))
 });
 
 gulp.task('styles', () => {
