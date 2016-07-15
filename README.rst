@@ -10,19 +10,22 @@ Prerequisites
 
 #. Node.js v4 or higher
 #. npm (which comes bundled with node)
-#. gulp-deploy-git
+#. gulp-gh-pages
 
-To install gulp-deploy-git
-    $ npm install --save-dev gulp-deploy-git
+To install gulp-gh-pages
+    $ npm install --save-dev gulp-gh-pages
 
 Contributing
 ------------
 
 Since this Web app is hosted on github.io, the 'master' branch must be used to deploy the production-ready app.  
-Because of this, all development takes place on the 'develop' branch.
+Because of this, all development takes place on the `develop <https://github.com/axon-id/axon-id.github.io/tree/develop>`__ branch.
 
 To start the app
     $ gulp serve
+
+To build the app
+    $ gulp build 
 
 To build and preview the production-ready app
     $ gulp serve:dist

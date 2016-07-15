@@ -4,8 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
-var   ghPages = require('gulp-gh-pages');
-ghPages.branch = 'master';
+const ghPages = require('gulp-gh-pages');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -97,7 +96,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    'README.rst'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
